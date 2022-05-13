@@ -52,7 +52,7 @@ database = {
 
 
    //Login function
-   const login=(acc,pwd)=>{
+const login=(acc,pwd)=>{
      
  return db.User.findOne({acc,passwd:pwd})
    .then(user=>{
